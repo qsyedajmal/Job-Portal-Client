@@ -26,7 +26,7 @@ export const Navbar = () => {
 
   return (
     <div>
-    <AppBar className='bg-white shadow-none text-primary xl:px-24 px-4 py-6 ' >
+    <AppBar className='bg-white shadow-none text-primary xl:px-24 px-4 py-6 ' position='static' >
 
       <Toolbar>
 
@@ -96,14 +96,14 @@ export const Navbar = () => {
           isMenuOpen &&
            (
 
-
-              <div className=' w-[85%] min-h-36 mx-auto relative top-24 p-3 bg-primary text-white '  >
-
-
+                //todo add top-24 if navbar position changed to fixed
+                <div className=' w-[85%] min-h-36 mx-auto relative  p-3 bg-primary text-white '>
 
 
-                <nav className=''>
-                  <ul className=''>
+
+
+                <nav>
+                  <ul >
                   {
                    navItems.map((item) => (
                     <li key={item.path} className='my-3'>
@@ -117,26 +117,6 @@ export const Navbar = () => {
 
                   </ul>
                 </nav>
-
-
-                {/* <ul >
-                 {
-                   navItems.map((item) => (
-                   <Link key={item.path} to={item.path} >{item.title}</Link>
-                  
-                   ))
-                    
-                 }
-                  <p>dwegg</p>
-
-               </ul> 
-
-               <p>dwegg</p>
-
-               <Link to={'/'} >dnjeih</Link>
-               */}
-             
-
 
               </div> 
 
