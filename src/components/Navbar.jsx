@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React, { useState } from 'react'
 
 import { AppBar, Toolbar, IconButton, Typography, Stack, Button, Box, Drawer} from "@mui/material";
@@ -151,15 +151,3 @@ export const Navbar = () => {
 
   
 }
-
-=======
-import React from 'react'
-
-export const Navbar = () => {
-  return (
-    <div>
-        navbar
-    </div>
-  )
-}
->>>>>>> e3a7761652c5689c52592022607a9cd09bad20a8
