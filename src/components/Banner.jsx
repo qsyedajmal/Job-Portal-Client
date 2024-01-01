@@ -4,15 +4,20 @@ import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 
 export const Banner = ({query, queryHandler}) => {
-  return (
-    <Box className='xl:px-24 px-4 py-14'>
+  //flex flex-col px-8 md:px-4 pt-8
+  // xl:px-24 px-4 py-14
 
-        <Typography variant='h4' className='font-bold mb-4'>Find your <Typography component='span' variant='h4' className='text-primary font-bold'>new job</Typography>  today</Typography>
+
+  //xl:px-28 px-8 md:px-4 py-14 pt-[88px]
+  return (
+    <Box className=' xl:px-28 px-8  py-14 pt-[88px]'>
+
+        <Typography variant='h4' className='font-bold mb-4'>Land in your <Typography component='span' variant='h4' className='text-primary font-bold'>new job</Typography>  today</Typography>
         <Typography variant="p" className='text-black/70  '>Thousands of jobs in thecomputer, engineering and technology sectors are waiting for you .</Typography>
         
         <form action="" className='mt-8'>
             <div className='flex flex-col md:flex-row gap-5'>
-                <div className='w-full md:w-1/2'>
+                <div className='w-full md:w-1/2 '>
                     <TextField 
                     label='What position are you looking for?' 
                     size='medium'
@@ -31,8 +36,7 @@ export const Banner = ({query, queryHandler}) => {
                     InputProps={{
                       startAdornment:<InputAdornment><LocationOnOutlinedIcon className='mr-3'/></InputAdornment>
                     }}
-                    value={query}
-                    onChange={queryHandler}/>
+                    />
                 </div>
                 <Button type='submit' variant='contained' className='bg-primary flex-grow'>Search</Button>
             </div>

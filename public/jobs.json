@@ -157,7 +157,7 @@
       "id": 6,
       "companyName": "Trainline group",
       "jobTitle": "DevOps Engineer",
-      "companyLogo": "/images/Trainline.png",
+      "companyLogo": "./images/Trainline.png",
       "minPrice": "80",
       "maxPrice": "120",
       "salaryType": "Yearly",
